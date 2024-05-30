@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    
+      <div class="intro">
+        <div id="playerEntry">
+          <label for="one">Player1:<input type="text" id="one" name="player" placeholder="Name" required></label>
+          <label for="two">Player2:<input type="text" id="two" name="player" placeholder="Name" required></label>
+             
+      </div>
+         
+      <button class="button1" id="dialogBtn" onclick="startGame()">Start Game</button>
+    </div>
+    <dialog id="dialog">
+      <div class="game-board" id="dialog-content">
+
+        <div class="cell" cellIndex="0"></div>
+        <div class="cell" cellIndex="1"></div>
+        <div class="cell" cellIndex="2"></div>
+        <div class="cell" cellIndex="3"></div>
+        <div class="cell" cellIndex="4"></div>
+        <div class="cell" cellIndex="5"></div>
+        <div class="cell" cellIndex="6"></div>
+        <div class="cell" cellIndex="7"></div>
+        <div class="cell" cellIndex="8"></div>
+        <h3 id="statusText"></h3>
+        <div class="twoBtns">
+          <button id="reset">Restart</button> <button id="quit" onclick="iQuit()">QUIT</button>
+
+
+        </div>
+      </div>
+    </dialog>
+    <section>
+
+    </section>
+
+    <!-- <section>
+    <button type="reset">Play Again</button>
+
+  </section> -->
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
